@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>agentInvokeClass</class>
+ <widget class="QMainWindow" name="agentInvokeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>198</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>agentInvoke</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(49, 49, 49);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="title">
+       <string>Connect Server</string>
+      </property>
+      <widget class="QSplitter" name="splitter_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>471</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="address_label">
+             <property name="text">
+              <string>Address</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="address_lineEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QSplitter" name="splitter_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QLabel" name="port_label">
+            <property name="text">
+             <string>Port</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="port_lineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="sendButton">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 183, 135);
+color: rgb(49, 49, 49);</string>
+        </property>
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>41</y>
+         <width>35</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Status:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="info_label">
+       <property name="geometry">
+        <rect>
+         <x>62</x>
+         <y>41</y>
+         <width>211</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 183, 135);</string>
+       </property>
+       <property name="text">
+        <string>Not Connected!</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>715</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="agentInvoke.qrc"/>
+ </resources>
+ <connections/>
+</ui>
